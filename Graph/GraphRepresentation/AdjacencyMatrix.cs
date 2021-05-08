@@ -24,7 +24,7 @@ namespace Graph.GraphRepresentation
 
         public void addEdge(int i, int j)
         {
-            if (i > 0 && i < _vertexCount && j > 0 && j < _vertexCount)
+            if (i >= 0 && i < _vertexCount && j >= 0 && j < _vertexCount)
             {
                 _adjMatrix[i, j] = true;
                 _adjMatrix[j, i] = true;
@@ -33,7 +33,7 @@ namespace Graph.GraphRepresentation
 
         public void removeEdge(int i, int j)
         {
-            if (i > 0 && i < _vertexCount && j > 0 && j < _vertexCount)
+            if (i >= 0 && i < _vertexCount && j >= 0 && j < _vertexCount)
             {
                 _adjMatrix[i, j] = false;
                 _adjMatrix[j, i] = false;
@@ -42,7 +42,7 @@ namespace Graph.GraphRepresentation
 
         public bool isEdge(int i, int j)
         {
-            if (i > 0 && i < _vertexCount && j > 0 && j < _vertexCount)
+            if (i >= 0 && i < _vertexCount && j >= 0 && j < _vertexCount)
                 return _adjMatrix[i, j];
             else
                 return false;

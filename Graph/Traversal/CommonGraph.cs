@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Graph.GraphRepresentation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,27 +7,20 @@ using System.Threading.Tasks;
 
 namespace Graph.Traversal
 {
-    public class Common
+    public class CommonGraph
     {
-        public int _maxVertices = 20;
-        public Vertex[] _vertexList;
-        public int[,] _adjMatrix;
-        public int _vertexCount;
-        public Stack<int> _theStack;
-        public Queue<int> _theQueue;
+        private const int _maxVertices = 20;
+        private Vertex[] _vertexList;
+        private AdjacencyMatrix _adjMatrix;
+        private int _vertexCount;
+        private Stack<int> _theStack;
+        private Queue<int> _theQueue;
 
-        public Common()
+        public CommonGraph(AdjacencyMatrix adjMat, Vertex[] vertex, int vertexCount)
         {
-            _vertexList = new Vertex[_maxVertices];
-            _adjMatrix = new int[_maxVertices, _maxVertices];
-            _vertexCount = 0;
-            for (int i = 0; i < _maxVertices; i++)
-            {
-                for (int j = 0; j < _maxVertices; j++)
-                {
-                    _adjMatrix[i, j] = 0;
-                }
-            }
+            _vertexList = vertex;
+            _adjMatrix = adjMat;
+            _vertexCount = vertexCount;
             _theStack = new Stack<int>();
             _theQueue = new Queue<int>();
         }
@@ -38,8 +32,8 @@ namespace Graph.Traversal
 
         private void addEdge(int start, int end)
         {
-            _adjMatrix[start, end] = 1;
-            _adjMatrix[end, start] = 1;
+            _adjMatrix.addEdge(start, end);
+            _adjMatrix.addEdge(end, start);
         }
 
         public void DisplayVertex(int v)
@@ -51,7 +45,7 @@ namespace Graph.Traversal
         {
             for (int i = 0; i < _vertexCount; i++)
             {
-                if (_adjMatrix[v, i] == 0 && _vertexList[v].visited == false)
+                if (_adjMatrix.isEdge(v,i) && !_vertexList[i].Visited)
                     return i;
 
             }
@@ -62,11 +56,18 @@ namespace Graph.Traversal
     public class Vertex
     {
         public char label;
-        public Boolean visited;
+        private Boolean _visited;
+
+        public Boolean Visited
+        {
+            get { return _visited; }   // get method
+            set { _visited = value; }  // set method
+        }
+
         public Vertex(char lab)
         {
             label = lab;
-            visited = false;
+            _visited = false;
         }
     }
 }

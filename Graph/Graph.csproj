@@ -47,9 +47,11 @@
     <Compile Include="GraphRepresentation\AdjacencyMatrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Traversal\BFS.cs" />
-    <Compile Include="Traversal\Common.cs" />
-    <Compile Include="Traversal\DFS.cs" />
+    <Compile Include="Traversal\BFSTraversal.cs" />
+    <Compile Include="Traversal\CommonGraph.cs" />
+    <Compile Include="Traversal\DFSTraversal.cs" />
+    <Compile Include="Traversal\TopologicalSort.cs" />
+    <Compile Include="Traversal\TraversalHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
