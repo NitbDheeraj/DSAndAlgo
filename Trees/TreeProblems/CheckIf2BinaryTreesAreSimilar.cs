@@ -19,11 +19,33 @@ namespace Trees.TreeProblems
             else if (binaryTree1 == null || binaryTree2 == null) //The code will enter in this condition only if one of them is not null
                 return false;
 
-            return CheckForSimilarity(binaryTree1.Left, binaryTree2.Right) 
-                && CheckForSimilarity(binaryTree1.Right, binaryTree2.Left);
+            return CheckForSimilarity(binaryTree1.Left, binaryTree2.Left)
+                && CheckForSimilarity(binaryTree1.Right, binaryTree2.Right);
 
             //  Time Complexity: O(n). Space Complexity: O(n), for recursive stack.
 
+        }
+    }
+
+    //  Write Code to Determine if Two Trees are Identical
+    public class IdenticalBinaryTrees
+    {
+
+        /*  Two trees are identical when they have same data and arrangement of data is also same.
+            To identify if two trees are identical, we need to traverse both trees simultaneously, 
+            and while traversing we need to compare data and children of the trees.
+        */
+        public bool IdenticalTrees(BinaryTreeNode<int> binaryTree1, BinaryTreeNode<int> binaryTree2)
+        {
+            if (binaryTree1 == null && binaryTree2 == null)
+                return true;
+            else if (binaryTree1 == null || binaryTree2 == null)/* one empty, one not -> false */
+                return false;
+
+            return (binaryTree1.Data == binaryTree2.Data) &&
+               IdenticalTrees(binaryTree1.Left, binaryTree2.Left) &&
+               IdenticalTrees(binaryTree1.Right, binaryTree2.Right);
+            //  Time Complexity: O(n). Space Complexity: O(n), for recursive stack.
         }
     }
 }

@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D0B90474
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesTest", "TreesTest\TreesTest.csproj", "{5A76B28B-E6B2-4ABA-9C11-318404CB5494}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datastructures", "Datastructures", "{FB401B46-5039-48DA-8FE9-01B09FF2E9DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{3306022E-CEEB-42AD-88C9-7A1BA5FBD580} = {FB401B46-5039-48DA-8FE9-01B09FF2E9DB}
+		{3D2F540D-6CC5-4640-BCFD-ED4E871E9B49} = {FB401B46-5039-48DA-8FE9-01B09FF2E9DB}
 		{5A76B28B-E6B2-4ABA-9C11-318404CB5494} = {D0B90474-A1C2-4879-8FA3-98ED02AA0B66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

@@ -49,8 +49,12 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestData.cs" />
     <Compile Include="TraversalTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeProblemsTest.cs" />
+    <Compile Include="TreeWidthTest.cs" />
+    <Compile Include="MaxLevelSumTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
