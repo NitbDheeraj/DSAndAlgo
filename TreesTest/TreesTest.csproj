@@ -55,6 +55,10 @@
     <Compile Include="TreeProblemsTest.cs" />
     <Compile Include="TreeWidthTest.cs" />
     <Compile Include="MaxLevelSumTest.cs" />
+    <Compile Include="HasPathSumTest.cs" />
+    <Compile Include="BinaryTreeSumTest.cs" />
+    <Compile Include="MirrorTreeTest.cs" />
+    <Compile Include="TreeFromTraversalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
