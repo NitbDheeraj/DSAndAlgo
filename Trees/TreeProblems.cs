@@ -47,6 +47,24 @@ namespace Trees
             Console.Write("\nHeight of given binary tree calculated iteratively is " + fH.FindHeightIteratively(binaryTree));
             Console.WriteLine("\n");
 
+            FindMinDepth tree = new FindMinDepth();
+            tree.root = new Node(1);
+            tree.root.left = new Node(2);
+            tree.root.right = new Node(3);
+            tree.root.left.left = new Node(4);
+            tree.root.left.right = new Node(5);
+            Console.WriteLine("The minimum depth of binary tree is : " + tree.minimumDepth());
+            Console.WriteLine("\n");
+
+            FindNumberOfLeaves fNL = new FindNumberOfLeaves();
+            Console.Write("Number of leaves in given binary tree is " + fNL.FindNumberOfLeave(binaryTree));
+            Console.WriteLine("\n");
+
+            FindNumberOfFullNodes fullNode = new FindNumberOfFullNodes();
+            Console.Write("Number of full nodes in given binary tree is " + fullNode.FindNumberOfFullNode(binaryTree));
+            Console.WriteLine("\n");
+
+
         }
     }
 }

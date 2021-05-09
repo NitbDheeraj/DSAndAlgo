@@ -53,8 +53,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeProblems.cs" />
     <Compile Include="TreeProblems\AddOrDeleteNode.cs" />
+    <Compile Include="TreeProblems\CheckIf2BinaryTreesAreSimilar.cs" />
+    <Compile Include="TreeProblems\FindDeepestNodeInBT.cs" />
     <Compile Include="TreeProblems\FindHeight.cs" />
     <Compile Include="TreeProblems\FindMaxElement.cs" />
+    <Compile Include="TreeProblems\FindMinDepth.cs" />
+    <Compile Include="TreeProblems\FindNumberOfLeaves.cs" />
     <Compile Include="TreeProblems\FindSizeOfBinaryTree.cs" />
     <Compile Include="TreeProblems\ReverseLevelOrder.cs" />
     <Compile Include="TreeProblems\SearchAnElement.cs" />
