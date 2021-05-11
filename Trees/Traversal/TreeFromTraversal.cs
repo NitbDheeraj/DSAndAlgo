@@ -29,15 +29,15 @@ namespace Trees.Traversal
 
     */
 
-    public class TreeFromTraversal
+    public class TreeFromTraversal<T>
     {
         // Store indexes of all items so that we
         // we can quickly find later
-        static Dictionary<char, int> mp = new Dictionary<char, int>();
+        static Dictionary<T, int> mp = new Dictionary<T, int>();
         static int preIndex = 0;
 
         
-        public BinaryTreeNode<char> BuildBinaryTree(char[] preOrder, char[] inOrder)
+        public BinaryTreeNode<T> BuildBinaryTree(T[] preOrder, T[] inOrder)
         {
             if (preOrder.Length == 0 && inOrder.Length == 0)
                 return null;
@@ -56,15 +56,15 @@ namespace Trees.Traversal
             checking for cases where inorder and preorder
             do not form a tree 
         */
-        private BinaryTreeNode<char> BuildBT(char[] preOrder, char[] inOrder, int inStrt, int inEnd)
+        private BinaryTreeNode<T> BuildBT(T[] preOrder, T[] inOrder, int inStrt, int inEnd)
         {
             if (inStrt > inEnd)
             {
                 return null;
             }
 
-            char data = preOrder[preIndex++];
-            BinaryTreeNode<char> binaryTree = new BinaryTreeNode<char>(data);
+            T data = preOrder[preIndex++];
+            BinaryTreeNode<T> binaryTree = new BinaryTreeNode<T>(data);
 
             /* Else find the index of this node in Inorder traversal */
             int inIndex = mp[data];
@@ -79,48 +79,125 @@ namespace Trees.Traversal
     }
 
 
-    /* Give an algorithm for constructing binary tree from given Inorder and Postorder traversals.
-     */
+    /* Give an algorithm for constructing binary tree from given Inorder and Postorder traversals. */
     public class TreeFromInorderAndPostOrder<T>
     {
-        // Store indexes of all items so that we
-        // we can quickly find later
-        static Dictionary<T, int> mp = new Dictionary<T, int>();
-        static int postIndex = 0;
+        Dictionary<T, int> dict = new Dictionary<T, int>();
 
         public BinaryTreeNode<T> BuildBinaryTree(T[] postOrder, T[] inOrder)
         {
             if (postOrder.Length == 0 && inOrder.Length == 0)
                 return null;
+
             for (int i = 0; i < inOrder.Length; i++)
             {
-                mp.Add(inOrder[i], i);
+                dict.Add(inOrder[i], i);
             }
-            postIndex = postOrder.Length - 1;
-            return BuildBT(postOrder, inOrder, 0, postOrder.Length - 1);
+
+            Index pIndex = new Index();
+            pIndex.index = postOrder.Length - 1;
+            return BuildBT(postOrder, inOrder, 0, postOrder.Length - 1, pIndex);
         }
 
-        private BinaryTreeNode<T> BuildBT(T[] postOrder, T[] inOrder, int inStrt, int inEnd)
+        private BinaryTreeNode<T> BuildBT(T[] postOrder, T[] inOrder, int inStrt, int inEnd, Index pIndex)
         {
             if (inStrt > inEnd )
-            {
                 return null;
-            }
 
-            T data = postOrder[postIndex];
+            T data = postOrder[pIndex.index];
             BinaryTreeNode<T> binaryTree = new BinaryTreeNode<T>(data);
-            (postIndex)--;
+            (pIndex.index)--;
+
+            /* If this node has no children then return */
+            if (inStrt == inEnd)
+                return binaryTree;
+
             /* Else find the index of this node in Inorder traversal */
-            int inIndex = mp[data];
+            int iIndex = search(binaryTree.Data);
 
             /*  Using index in Inorder traversal, construct left and
                 right subtress */
-            
-            binaryTree.Right = BuildBT(postOrder, inOrder, inIndex + 1, inEnd);
-            binaryTree.Left = BuildBT(postOrder, inOrder, inStrt, inIndex - 1);
+
+            binaryTree.Right = BuildBT(postOrder, inOrder, iIndex + 1, inEnd, pIndex);
+            binaryTree.Left = BuildBT(postOrder, inOrder, inStrt, iIndex - 1, pIndex);
 
             return binaryTree;
         }
 
+        private int search( T data)
+        {
+            return dict.ContainsKey(data) ? dict[data] : 0;
+            
+        }
+    }
+
+    // Class Index created to implement
+    // pass by reference of Index
+    public class Index
+    {
+        public int index;
+    }
+
+    public class TreeFromInOrderAndLeveOrder<T>
+    {
+        Dictionary<T, int> dict = new Dictionary<T, int>();
+        static int index = 0;
+        public BinaryTreeNode<T> BuildBinaryTree(T[] levelOrder, T[] inOrder)
+        {
+            for (int i = 0; i < inOrder.Length; i++)
+                dict.Add(inOrder[i], i);
+            Index pIndex = new Index();
+            BinaryTreeNode<T> startnode = null;
+            return constructTree(startnode, levelOrder, inOrder, 0, inOrder.Length - 1);
+        }
+        private BinaryTreeNode<T> constructTree(BinaryTreeNode<T> startnode, T[] levelOrder, T[] inOrder, int start, int end)
+        {
+            // if start index is more than end index
+            if (start > end )
+                return null;
+
+            if (start == end)
+                return new BinaryTreeNode<T>(inOrder[start]);
+
+            bool found = false;
+            int index = 0;
+
+            // it represents the index in inOrder
+            // array of element that appear first
+            // in levelOrder array.
+            for (int i = 0; i < levelOrder.Length - 1; i++)
+            {
+                T data = levelOrder[i];
+                for (int j = start; j < end; j++)
+                {
+                    if (data.Equals(inOrder[j]))
+                    {
+                        startnode = new BinaryTreeNode<T>(data);
+                        index = j;
+                        found = true;
+                        break;
+                    }
+                }
+                if (found == true)
+                {
+                    break;
+                }
+            }
+
+            // elements present before index are
+            // part of left child of startNode.
+            // elements present after index are
+            // part of right child of startNode.
+            startnode.Left
+                = constructTree(startnode, levelOrder, inOrder,
+                                start, index - 1);
+            startnode.Right
+                = constructTree(startnode, levelOrder, inOrder,
+                                index + 1, end);
+            
+            return startnode;
+
+
+        }
     }
 }

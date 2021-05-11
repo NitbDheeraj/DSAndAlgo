@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrintAncestorsTest.cs" />
     <Compile Include="TestData.cs" />
     <Compile Include="TraversalTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +60,8 @@
     <Compile Include="BinaryTreeSumTest.cs" />
     <Compile Include="MirrorTreeTest.cs" />
     <Compile Include="TreeFromTraversalTest.cs" />
+    <Compile Include="FindLCATest.cs" />
+    <Compile Include="ZigZagTraversalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

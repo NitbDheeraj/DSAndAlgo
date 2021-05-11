@@ -14,7 +14,7 @@ namespace TreesTest
             var inorderTraversal = new char[] { 'D', 'B', 'E', 'A', 'F', 'C' };
             var preorderTraversal = new char[] { 'A', 'B', 'D', 'E', 'C', 'F' };
 
-            TreeFromTraversal tFT = new TreeFromTraversal();
+            TreeFromTraversal<char> tFT = new TreeFromTraversal<char>();
             BinaryTreeNode<char> binaryTree = tFT.BuildBinaryTree(preorderTraversal, inorderTraversal);
 
             Assert.AreEqual(binaryTree.Data, 'A');
@@ -41,6 +41,24 @@ namespace TreesTest
             Assert.AreEqual(binaryTree.Right.Left.Data, 6);
             Assert.AreEqual(binaryTree.Left.Left.Data, 4);
             Assert.AreEqual(binaryTree.Left.Right.Data, 5);
+
+        }
+
+        [TestMethod]
+        public void CheckIfTreeFromLevelorderAndInorderTraversal()
+        {
+            var inorderTraversal = new int[] { 4, 8, 10, 12, 14, 20, 22 };
+            var levelOrder = new int[] { 20, 8, 22, 4, 12, 10, 14 };
+
+            TreeFromInOrderAndLeveOrder<int> tFT = new TreeFromInOrderAndLeveOrder<int>();
+            BinaryTreeNode<int> binaryTree = tFT.BuildBinaryTree(levelOrder, inorderTraversal);
+
+            Assert.AreEqual(binaryTree.Data, 20);
+            Assert.AreEqual(binaryTree.Left.Data, 8);
+            Assert.AreEqual(binaryTree.Right.Data, 22);
+            Assert.AreEqual(binaryTree.Left.Left.Data, 4);
+            Assert.AreEqual(binaryTree.Left.Right.Data, 12);
+            Assert.AreEqual(binaryTree.Left.Right.Right.Data, 14);
 
         }
     }
