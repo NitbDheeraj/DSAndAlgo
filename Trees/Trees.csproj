@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinarySearchTrees\BSTNode.cs" />
+    <Compile Include="BinarySearchTrees\CheckIfBST.cs" />
     <Compile Include="BinarySearchTrees\DeleteANode.cs" />
     <Compile Include="BinarySearchTrees\FindAnElementInBST.cs" />
     <Compile Include="BinarySearchTrees\InsertANode.cs" />

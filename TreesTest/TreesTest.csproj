@@ -49,9 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinarySearchTreeTest\DeletingNodeTest.cs" />
     <Compile Include="BinarySearchTreeTest\FindANodeTest.cs" />
     <Compile Include="BinarySearchTreeTest\InsertingANodeInBSTTest.cs" />
     <Compile Include="BinarySearchTreeTest\TestDataForBST.cs" />
+    <Compile Include="BinarySearchTreeTest\CheckBSTTest.cs" />
     <Compile Include="PrintAncestorsTest.cs" />
     <Compile Include="TestData.cs" />
     <Compile Include="TraversalTests.cs" />

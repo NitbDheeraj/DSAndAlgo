@@ -15,9 +15,9 @@ namespace Trees.BinarySearchTrees
 
             if (root == null)
                 Console.Write("Error!!");
-            else if (root.Data < node.Data)
-                root.Left = DeleteNode(root.Left, node);
             else if (root.Data > node.Data)
+                root.Left = DeleteNode(root.Left, node);
+            else if (root.Data < node.Data)
                 root.Right = DeleteNode(root.Right, node);
             else
             {
@@ -34,9 +34,9 @@ namespace Trees.BinarySearchTrees
                 {
                     //One child
                     temp = root;
-                    if (root.Left != null)
+                    if (root.Left == null)
                         root = root.Right;
-                    if (root.Right != null)
+                    else if (root.Right == null)
                         root = root.Left;
 
                 }
