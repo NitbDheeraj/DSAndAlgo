@@ -14,8 +14,11 @@ namespace TreesTest.BinarySearchTreeTest
             BSTNode<int> binaryTree = TestDataForBST.CreateBinaryTree();
             BSTNode<int> nonBST = TestDataForBST.CreateNonBST();
             Assert.IsTrue(chk.CheckBST(binaryTree));
+            Assert.IsTrue(chk.CheckBSTEfficiently(binaryTree));
+            Assert.IsTrue(chk.CheckBSTUsingInorder(binaryTree));
             Assert.IsFalse(chk.CheckBST(nonBST));
-
+            Assert.IsFalse(chk.CheckBSTEfficiently(nonBST));
+            Assert.IsFalse(chk.CheckBSTUsingInorder(nonBST));
             //              6
             //             / \
             //            2   8
@@ -33,6 +36,8 @@ namespace TreesTest.BinarySearchTreeTest
             root.Left.Left = leftLeft;
             root.Left.Right = leftRight;
             Assert.IsFalse(chk.CheckBST(root));
+            Assert.IsFalse(chk.CheckBSTEfficiently(root));
+            Assert.IsFalse(chk.CheckBSTUsingInorder(root));
         }
     }
 }

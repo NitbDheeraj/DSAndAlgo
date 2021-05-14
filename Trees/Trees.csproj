@@ -47,7 +47,13 @@
     <Compile Include="BinarySearchTrees\CheckIfBST.cs" />
     <Compile Include="BinarySearchTrees\DeleteANode.cs" />
     <Compile Include="BinarySearchTrees\FindAnElementInBST.cs" />
+    <Compile Include="BinarySearchTrees\FindCeiling.cs" />
+    <Compile Include="BinarySearchTrees\FindFloor.cs" />
+    <Compile Include="BinarySearchTrees\FindKthSmallestElement.cs" />
+    <Compile Include="BinarySearchTrees\FindLCA.cs" />
     <Compile Include="BinarySearchTrees\InsertANode.cs" />
+    <Compile Include="BinarySearchTrees\ShortedArrayToBST.cs" />
+    <Compile Include="BinarySearchTrees\ShortestPathbw2Nodes.cs" />
     <Compile Include="BinaryTreeNode.cs" />
     <Compile Include="Traversal.cs" />
     <Compile Include="Traversal\InOrderTraversal.cs" />
@@ -82,6 +88,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Contents.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

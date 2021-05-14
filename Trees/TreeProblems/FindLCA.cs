@@ -75,5 +75,24 @@ namespace Trees.TreeProblems
             return false;
         }
 
+        public BinaryTreeNode<int> LCA(BinaryTreeNode<int> root, BinaryTreeNode<int> node1, BinaryTreeNode<int> node2)
+        {
+            BinaryTreeNode<int> left, right;
+
+            if (root == null)
+                return null;
+
+            if (root.Data == node1.Data || root.Data == node2.Data)
+                return root;
+
+            left = LCA(root.Left, node1, node2);
+            right = LCA(root.Right, node1, node2);
+
+            if (left != null && right != null) //nodes are on seprate branch
+                return root;
+            else
+                return left != null ? left : right; //one node is on one branch
+        }
+
     }
 }

@@ -1,0 +1,48 @@
+﻿
+Tree Traversal Problems (Both recursive and non recursive solutions)
+	1.	PreOrder Traversal (DLR)
+	2.	InOrder Traversal  (LDR)
+	3.	PostOrder Traversal (LRD)
+	4.	Level Order Traversal (Used to solve a lot of Tree problems in O(n))
+	5.  ZigZag Traversal
+	6.  Given 2 traversals create a binary tree (Inorder is required)
+		InOrder and PreOrder
+		Inorder and Post Order
+		InOrder and Level Order
+	7.  Print level order data in reverse order
+
+Binary Tree Problems:
+	1.  Search a node (iteratively and recursively)
+	2.	Add or delete a node
+	3.	Find maximum element In binary tree (Both Recursively and iteratively(Using Level Order))
+	4.	Find Size of a binary tree (Recursively and iteratively using level order)
+	5.  Find Height or binary tree (With and without recursion)
+	6.	Find Minimum Depth of a binary tree
+	7.	Find deepest node in a binary tree (last node processed from level order is deepest node)
+	8.  Find number of leaves in binary tree (level order traversal)
+	9.  Number of full nodes in a binary tree
+	10.	Number of half nodes in a binary tree
+	11.	Check if 2 binary tree are structurally identical
+	12.	Find Diameter in a binary tree
+	13.	Find width of a binary tree
+	14.	Level that has max sum in binary tree 
+	15.	Print all root to leaf path of a binary tree
+	16.	checking the existence of path with given sum. That means, given a sum, check whether there exists a path from root to any of the nodes.
+	17.	Find sum of all element of a binary tree
+	17.	Check tree for its mirror
+	18.	Convert tree to its mirror
+	19.	Print all the ancestors of a node in binary tree
+	20.	Find LCA of 2 nodes in a binary tree
+	21.	
+
+Binary Search Tree Problems:
+	1.	Find a node in BST (with and without recursion)
+	2.	Find Minimum in BST (with and without recursion)
+	3.	Find Maximum in BST (with and without recursion)
+	4.	Check if a tree is BST (recursively, effeciently!! and Using Inorder traversal (Inorder traversal of BST gives shorted list))
+	5.	Find shortest path between two nodes in a BST
+	6.	Convert a shorted array to BST
+	7.	Find Kth Smallest Element in BST
+	8.  Find Floor of an element in BST
+	9.	Find Ceiling of BST
+
