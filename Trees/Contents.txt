@@ -45,4 +45,12 @@ Binary Search Tree Problems:
 	7.	Find Kth Smallest Element in BST
 	8.  Find Floor of an element in BST
 	9.	Find Ceiling of BST
+	10.	Print all nodes between 2 numbers in a BST
 
+AVL Trees
+	1.	Rotations:
+			1.	Left Rotation
+			2.	Right Rotation
+			3.	Left Right Rotation
+			4.	Right Left Rotation
+	2.	Given a binary tree, check if it is AVL tree or not

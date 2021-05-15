@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3306022E-CEEB-42AD-88C9-7A1BA5FBD580}</ProjectGuid>
+    <ProjectGuid>{51C50761-1492-4379-BB38-B789F41CACBB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Trees</RootNamespace>
     <AssemblyName>Trees</AssemblyName>
@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AVLTrees\AVLTreeNode.cs" />
+    <Compile Include="AVLTrees\CheckAVL.cs" />
+    <Compile Include="AVLTrees\Rotations\LeftRightRotations.cs" />
+    <Compile Include="AVLTrees\Rotations\LeftRotation.cs" />
+    <Compile Include="AVLTrees\Rotations\RightLeftRotation.cs" />
+    <Compile Include="AVLTrees\Rotations\RightRotation.cs" />
     <Compile Include="BinarySearchTrees\BSTNode.cs" />
     <Compile Include="BinarySearchTrees\CheckIfBST.cs" />
     <Compile Include="BinarySearchTrees\DeleteANode.cs" />
@@ -52,16 +58,17 @@
     <Compile Include="BinarySearchTrees\FindKthSmallestElement.cs" />
     <Compile Include="BinarySearchTrees\FindLCA.cs" />
     <Compile Include="BinarySearchTrees\InsertANode.cs" />
+    <Compile Include="BinarySearchTrees\PrintAllNUmbersBetween2Nodes.cs" />
     <Compile Include="BinarySearchTrees\ShortedArrayToBST.cs" />
     <Compile Include="BinarySearchTrees\ShortestPathbw2Nodes.cs" />
     <Compile Include="BinaryTreeNode.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Traversal.cs" />
     <Compile Include="Traversal\InOrderTraversal.cs" />
     <Compile Include="Traversal\LevelOrderTraversal.cs" />
     <Compile Include="Traversal\PostOrderTraversal.cs" />
     <Compile Include="Traversal\PreOrderTraversal.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Traversal\TreeFromTraversal.cs" />
     <Compile Include="Traversal\ZigZagTraversal.cs" />
     <Compile Include="TreeProblems.cs" />
