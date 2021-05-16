@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datastructures", "Datastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trees", "Trees\Trees.csproj", "{51C50761-1492-4379-BB38-B789F41CACBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap", "Heap\Heap.csproj", "{F3C958AD-CFDE-45D3-9165-82F6007C6ABC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{51C50761-1492-4379-BB38-B789F41CACBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51C50761-1492-4379-BB38-B789F41CACBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51C50761-1492-4379-BB38-B789F41CACBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C958AD-CFDE-45D3-9165-82F6007C6ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C958AD-CFDE-45D3-9165-82F6007C6ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C958AD-CFDE-45D3-9165-82F6007C6ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C958AD-CFDE-45D3-9165-82F6007C6ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3D2F540D-6CC5-4640-BCFD-ED4E871E9B49} = {FB401B46-5039-48DA-8FE9-01B09FF2E9DB}
 		{5A76B28B-E6B2-4ABA-9C11-318404CB5494} = {D0B90474-A1C2-4879-8FA3-98ED02AA0B66}
+		{51C50761-1492-4379-BB38-B789F41CACBB} = {FB401B46-5039-48DA-8FE9-01B09FF2E9DB}
+		{F3C958AD-CFDE-45D3-9165-82F6007C6ABC} = {FB401B46-5039-48DA-8FE9-01B09FF2E9DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96C327E4-8C65-40F9-901F-C43E1E844794}

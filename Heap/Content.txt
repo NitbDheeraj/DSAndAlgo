@@ -1,0 +1,9 @@
+﻿Heap:
+	1.	Defining a heap
+	2.	Find Parent. left children and right children of a node in heap
+	3.	Heapifying an element
+	4.	Insert and delete an element from heap
+	5.	Build heap from array
+
+Heap Problems:
+	1.	Heap Sort
