@@ -1,0 +1,5 @@
+﻿Queues:
+		Implementation using Linked list
+
+Problems
+		1.	Reverse a queue

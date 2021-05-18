@@ -1,0 +1,11 @@
+﻿Linked List
+	1.	Insert a node in singly linked list
+	2.	Delete a node in singly linked list
+	3.	Insert a node in doubly linked list
+	4.	Delete a node in doubly linked list
+
+Linked list problems
+	1.	Find nth node from end in a linked list
+	2.	Find if cycle exists in a linked list (Floyds solution)
+	3.	Find the start node if cycle exists in a linked list
+	4.	Find the length of loop if cycle exist in a linked list
