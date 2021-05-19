@@ -51,13 +51,20 @@
     <Compile Include="DLLNode.cs" />
     <Compile Include="LinkedListNode.cs" />
     <Compile Include="Problems\CheckIfLengthIsOdd.cs" />
+    <Compile Include="Problems\CheckIfPalindrome.cs" />
     <Compile Include="Problems\CycleInAList.cs" />
     <Compile Include="Problems\DisplayListFromEnd.cs" />
+    <Compile Include="Problems\FindLastModularNode.cs" />
     <Compile Include="Problems\FindMid.cs" />
+    <Compile Include="Problems\JosephusProblem.cs" />
     <Compile Include="Problems\Merge2Lists.cs" />
     <Compile Include="Problems\MergingPointInLists.cs" />
     <Compile Include="Problems\NthNodeFromEnd.cs" />
+    <Compile Include="Problems\PrintCommonElementIn2List.cs" />
     <Compile Include="Problems\ReverseALinkedList.cs" />
+    <Compile Include="Problems\ReverseKItems.cs" />
+    <Compile Include="Problems\SplitCircularLinkedList.cs" />
+    <Compile Include="Problems\SwapInPairs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
