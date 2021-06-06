@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queues", "Queues\Queues.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{C321F1A1-D909-4E40-B44E-46864C415DFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hashtables", "Hashtables\Hashtables.csproj", "{A7F4582C-5662-45CF-B41F-C65D6E0D4E54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{C321F1A1-D909-4E40-B44E-46864C415DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C321F1A1-D909-4E40-B44E-46864C415DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C321F1A1-D909-4E40-B44E-46864C415DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F4582C-5662-45CF-B41F-C65D6E0D4E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F4582C-5662-45CF-B41F-C65D6E0D4E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F4582C-5662-45CF-B41F-C65D6E0D4E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F4582C-5662-45CF-B41F-C65D6E0D4E54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +72,7 @@ Global
 		{F3C958AD-CFDE-45D3-9165-82F6007C6ABC} = {FB401B46-5039-48DA-8FE9-01B09FF2E9DB}
 		{13A3115A-0CB1-4D07-8B69-2F8AD407379A} = {FB401B46-5039-48DA-8FE9-01B09FF2E9DB}
 		{C321F1A1-D909-4E40-B44E-46864C415DFB} = {FB401B46-5039-48DA-8FE9-01B09FF2E9DB}
+		{A7F4582C-5662-45CF-B41F-C65D6E0D4E54} = {FB401B46-5039-48DA-8FE9-01B09FF2E9DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96C327E4-8C65-40F9-901F-C43E1E844794}

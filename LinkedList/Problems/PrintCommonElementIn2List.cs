@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList.Problems
 {
+    //Given two sorted linked lists, given an algorithm for the printing common elements of them.
     public class PrintCommonElementIn2List
     {
 

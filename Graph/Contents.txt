@@ -1,0 +1,9 @@
+﻿Graph theory Basics
+	Graph representation
+		1.	Adjacency Lists
+		2.	Adjacency Matrix
+
+	Graph Traversal
+		1.	BFS Traversal (using adjacency matrix and adjacency list)
+		2.	DFS Traversal (using adjacency matrix and adjacency list)
+		3.	Topological Sort
