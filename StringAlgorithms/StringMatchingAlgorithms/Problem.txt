@@ -1,0 +1,15 @@
+﻿we concentrate on checking whether a pattern P is a substring of another string T
+(T stands for text) or not. Since we are trying to check a fixed string P, sometimes these
+algorithms are called exact string matching algorithms. To simplify our discussion, let us assume
+that the length of given text T is n and the length of the pattern P which we are trying to match has
+the length m. That means, T has the characters from 0 to n – 1 (T[0 ...n – 1]) and P has the
+characters from 0 to m – 1 (P[0 ...m – 1]). 
+
+Following are some of the algorithms that we will look
+
+• Brute Force Method
+• Rabin-Karp String Matching Algorithm
+• String Matching with Finite Automata
+• KMP Algorithm
+• Boyer-Moore Algorithm
+• Suffix Trees
