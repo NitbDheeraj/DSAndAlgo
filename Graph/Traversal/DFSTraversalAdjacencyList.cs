@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Graph.Traversal
 {
+    //time complexity of DFS is O(V + E) if adjacency list is used
     public class DFSTraversalAdjacencyList
     {
         private int _v;
