@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterviewQuestions", "Inter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewQuestions", "IntervviewQuestions\InterviewQuestions.csproj", "{4B4470B8-38EA-4614-93EF-E7670B928EED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{C40C88E4-A911-485A-B6D4-2EE32EEA40EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{4B4470B8-38EA-4614-93EF-E7670B928EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B4470B8-38EA-4614-93EF-E7670B928EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B4470B8-38EA-4614-93EF-E7670B928EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C40C88E4-A911-485A-B6D4-2EE32EEA40EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40C88E4-A911-485A-B6D4-2EE32EEA40EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40C88E4-A911-485A-B6D4-2EE32EEA40EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40C88E4-A911-485A-B6D4-2EE32EEA40EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +104,7 @@ Global
 		{6334C7CB-7169-4FCD-8840-D3A980AD1CD4} = {3A01A6A2-F7F8-413E-973E-B56AC43B6B38}
 		{BFB06EBD-284A-43FF-B1AF-A82E72D095BC} = {3A01A6A2-F7F8-413E-973E-B56AC43B6B38}
 		{4B4470B8-38EA-4614-93EF-E7670B928EED} = {9D484B20-484A-4534-8670-6710B4D62136}
+		{C40C88E4-A911-485A-B6D4-2EE32EEA40EB} = {3A01A6A2-F7F8-413E-973E-B56AC43B6B38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96C327E4-8C65-40F9-901F-C43E1E844794}

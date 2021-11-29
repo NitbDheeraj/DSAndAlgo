@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4B4470B8-38EA-4614-93EF-E7670B928EED}</ProjectGuid>
+    <ProjectGuid>{C40C88E4-A911-485A-B6D4-2EE32EEA40EB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>IntervviewQuestions</RootNamespace>
-    <AssemblyName>IntervviewQuestions</AssemblyName>
+    <RootNamespace>DynamicProgramming</RootNamespace>
+    <AssemblyName>DynamicProgramming</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,16 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContainerWithMostWater.cs" />
-    <Compile Include="LongestCommonSubstring.cs" />
+    <Compile Include="0-1 KapsackProblem\KapsackProblem.cs" />
+    <Compile Include="Fibonacci.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TwoSum.cs" />
-    <Compile Include="ValidParenthesis.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ProblemDocs\ContainerWithMostWater.docx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
