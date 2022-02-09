@@ -1,0 +1,15 @@
+﻿String Matching Algorithms
+	- Brute Force
+	- Rabin Karp String Matching Algorithm
+	- String matching with finite Automata
+	- KMP Algorithm
+	- Boyers Moore Algorithm
+	- Suffix Trees
+
+DataStructures For storing Strings
+	- Hashing Table
+	- Binary Search Trees
+	- Tries
+	- Ternary Search Trees
+
+Suffix trees

@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="StringMatchingAlgorithms\Problem.txt" />
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

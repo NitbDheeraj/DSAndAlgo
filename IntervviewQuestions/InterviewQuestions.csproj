@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckPalindrome.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="LongestCommonSubstring.cs" />
     <Compile Include="Program.cs" />

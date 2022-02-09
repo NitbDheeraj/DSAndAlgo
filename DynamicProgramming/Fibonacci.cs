@@ -18,29 +18,20 @@ namespace DynamicProgramming
         }
 
 
-        // Time complexity is reduced ti O(N)
+        // Time complexity is reduced t0 O(N)
         public long BottomUpFibonacci(int n)
         {
-            // Declare an array to
-            // store Fibonacci numbers.
-            // 1 extra to handle
-            // case, n = 0
-            int[] f = new int[n + 2];
-            int i;
+            int[] arr = new int[n];
 
-            /* 0th and 1st number of the
-               series are 0 and 1 */
-            f[0] = 0;
-            f[1] = 1;
+            arr[0] = 1;
+            arr[1] = 1;
 
-            for (i = 2; i <= n; i++)
+            for (int i = 2; i < n; i++)
             {
-                /* Add the previous 2 numbers
-                   in the series and store it */
-                f[i] = f[i - 1] + f[i - 2];
+                arr[i] = arr[i - 1] + arr[i - 2];
             }
 
-            return f[n];
+            return arr[n - 1];
         }
 
         private int[] fib = new int[10];
