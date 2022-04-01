@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3D2F540D-6CC5-4640-BCFD-ED4E871E9B49}</ProjectGuid>
+    <ProjectGuid>{40C0E0DD-6C98-4A55-BCD4-C5347D868B4F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Graph</RootNamespace>
-    <AssemblyName>Graph</AssemblyName>
+    <RootNamespace>SlidingWindow</RootNamespace>
+    <AssemblyName>SlidingWindow</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,25 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GraphRepresentation\AdjacencyList.cs" />
-    <Compile Include="GraphRepresentation\AdjacencyMatrix.cs" />
+    <Compile Include="LargestSumContiguousSubarray.cs" />
+    <Compile Include="LongestCommonSubstrigWithoutRepeatingChar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShortestPath\UnweightedGraph.cs" />
-    <Compile Include="SimpleTraversal\AdjacencyMatrixTraversal.cs" />
-    <Compile Include="Traversal\BFSTraversalAdjacencyList.cs" />
-    <Compile Include="Traversal\BFSTraversal.cs" />
-    <Compile Include="Traversal\CommonGraph.cs" />
-    <Compile Include="Traversal\DFSTraversal.cs" />
-    <Compile Include="Traversal\DFSTraversalAdjacencyList.cs" />
-    <Compile Include="Traversal\TopologicalSort.cs" />
-    <Compile Include="Traversal\TraversalHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Contents.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
