@@ -26,11 +26,14 @@ namespace IntervviewQuestions
         Create a dictionary of value->index for all index, value pairs in nums. 
         Note that you can have multiple values with different indices. In this case, 
         the highest index will be stored in the dictionary and lower indexes will be overwritten. 
-        This behavior can be modified, of course, but I don't believe it needs to be for this problem because part of the problem statement is this: 
-         "You may assume that each input would have exactly one solution." Thus, each input has a single unique output so we never have to worry about returning a "wrong-pair" of indices.
+        This behavior can be modified, of course, but I don't believe it needs to be for this problem because
+        part of the problem statement is this: 
+         "You may assume that each input would have exactly one solution." 
+        Thus, each input has a single unique output so we never have to worry about returning a "wrong-pair" of indices.
 
         Loop through the enumeration of nums, getting i as index, and v as value. 
-        Check if target-v is a key in the dictionary we created, and simultaneously assert that the value pointed to by that key is not i. 
+        Check if target-v is a key in the dictionary we created, and simultaneously 
+        assert that the value pointed to by that key is not i. 
         If this is ever true, return the tuple i+1, lookup.get(target-v)+1.
      * */
 

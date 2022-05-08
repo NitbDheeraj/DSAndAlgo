@@ -46,6 +46,7 @@
     <Compile Include="CheckPalindrome.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="LongestCommonSubstring.cs" />
+    <Compile Include="MedianInInfiniteStream.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoSum.cs" />

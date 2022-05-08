@@ -23,9 +23,10 @@ namespace LRUCache
             LRUCache cache = new LRUCache(2);
             cache.Put(1, 10);
             cache.Put(5, 12);
-            Console.WriteLine(cache.)
 
+            Console.WriteLine(cache.Get(5));
 
+            Console.ReadLine();
         }
     }
 

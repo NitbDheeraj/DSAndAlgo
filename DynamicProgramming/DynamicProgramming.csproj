@@ -44,13 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="0-1 KapsackProblem\KapsackProblem.cs" />
+    <Compile Include="2MinCostOfTravel.cs" />
+    <Compile Include="4PlaceTilesSmall.cs" />
+    <Compile Include="5PlaceTilesgeneric.cs" />
+    <Compile Include="6waysToScore.cs" />
+    <Compile Include="7GridTravellerAdvanced.cs" />
     <Compile Include="CanCountAllConstruct\AllConstruct.cs" />
     <Compile Include="CanCountAllConstruct\CountConstruct.cs" />
     <Compile Include="CanHowBestSum\BestSum.cs" />
     <Compile Include="CanCountAllConstruct\CanConstruct.cs" />
     <Compile Include="CanHowBestSum\CanSum.cs" />
-    <Compile Include="Fibonacci.cs" />
-    <Compile Include="GridTraveller.cs" />
+    <Compile Include="1Fibonacci.cs" />
+    <Compile Include="3GridTraveller.cs" />
     <Compile Include="CanHowBestSum\HowSum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
