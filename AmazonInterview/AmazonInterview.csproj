@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3D2F540D-6CC5-4640-BCFD-ED4E871E9B49}</ProjectGuid>
+    <ProjectGuid>{627A30C1-24DA-4BF4-AA38-1BF728884AC0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Graph</RootNamespace>
-    <AssemblyName>Graph</AssemblyName>
+    <RootNamespace>AmazonInterview</RootNamespace>
+    <AssemblyName>AmazonInterview</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,26 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GraphRepresentation\AdjacencyList.cs" />
-    <Compile Include="GraphRepresentation\AdjacencyMatrix.cs" />
-    <Compile Include="GraphRepresentation\SimpleAdjacencyList.cs" />
+    <Compile Include="AreaUnderHistogram.cs" />
+    <Compile Include="CountIslands.cs" />
+    <Compile Include="CourseScheduling.cs" />
+    <Compile Include="LongestSubstringWithKUniqueChar.cs" />
+    <Compile Include="LongestSubstringWithoutRepeatingChar.cs" />
+    <Compile Include="LRUCache.cs" />
+    <Compile Include="MaximulSumSubarray.cs" />
+    <Compile Include="MaxProductSubarray.cs" />
+    <Compile Include="MeetingRoomScheduling.cs" />
+    <Compile Include="MergeNSortedArray.cs" />
+    <Compile Include="MinimumNumberOfCoins.cs" />
+    <Compile Include="PreviousGreaterElement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShortestPath\UnweightedGraph.cs" />
-    <Compile Include="SimpleTraversal\AdjacencyMatrixTraversal.cs" />
-    <Compile Include="Traversal\BFSTraversalAdjacencyList.cs" />
-    <Compile Include="Traversal\BFSTraversal.cs" />
-    <Compile Include="Traversal\CommonGraph.cs" />
-    <Compile Include="Traversal\DFSTraversal.cs" />
-    <Compile Include="Traversal\DFSTraversalAdjacencyList.cs" />
-    <Compile Include="Traversal\TopologicalSort.cs" />
-    <Compile Include="Traversal\TraversalHelper.cs" />
+    <Compile Include="RottenOranges.cs" />
+    <Compile Include="SmallestSumContineousSubarray.cs" />
+    <Compile Include="WaysToReachNthStair.cs" />
+    <Compile Include="WaysToReachNthStairGeneric.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Contents.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

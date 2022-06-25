@@ -48,6 +48,7 @@
     <Compile Include="4PlaceTilesSmall.cs" />
     <Compile Include="5PlaceTilesgeneric.cs" />
     <Compile Include="6waysToScore.cs" />
+    <Compile Include="6waystoscore_1.cs" />
     <Compile Include="7GridTravellerAdvanced.cs" />
     <Compile Include="CanCountAllConstruct\AllConstruct.cs" />
     <Compile Include="CanCountAllConstruct\CountConstruct.cs" />

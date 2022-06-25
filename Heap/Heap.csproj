@@ -51,6 +51,7 @@
     <Compile Include="HeapProblems\FindKthSmallestElement.cs" />
     <Compile Include="HeapProblems\FindMaxInMinHeap.cs" />
     <Compile Include="HeapProblems\HeapSort.cs" />
+    <Compile Include="MinHeap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
