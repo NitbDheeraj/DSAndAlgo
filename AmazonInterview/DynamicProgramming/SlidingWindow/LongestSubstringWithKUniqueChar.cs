@@ -17,7 +17,7 @@ namespace AmazonInterview
             int slow = 0, fast = 0, result = 0;
 
             Dictionary<char, int> d = new Dictionary<char, int>();
-
+            var stringToPrint = string.Empty;
             while(fast < s.Length)
             {
                 char c = s[fast];
@@ -27,7 +27,7 @@ namespace AmazonInterview
                 else
                     d[c] += 1;
 
-                while(d.Count() >= k)
+                while(d.Count() > k)
                 {
                     char c1 = s[slow];
 
@@ -37,9 +37,17 @@ namespace AmazonInterview
                         d[c1] -= 1;
                     slow++;
                 }
-                result = Math.Max(result, fast - slow + 1);
+                //result = Math.Max(result, fast - slow + 1);
+                if(fast - slow + 1 > result)
+                {
+                    result = fast - slow + 1;
+                    stringToPrint = s.Substring(slow, result);
+                }
+
                 fast++;
             }
+
+            Console.WriteLine(stringToPrint);
             return result;
 
         }

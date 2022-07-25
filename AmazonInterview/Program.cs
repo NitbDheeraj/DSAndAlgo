@@ -10,8 +10,15 @@ namespace AmazonInterview
     {
         static void Main(string[] args)
         {
-            MaxProductSubarray mp = new MaxProductSubarray();
-            mp.testMaxProduct();
+            //MaxProductSubarray mp = new MaxProductSubarray();
+            //mp.testMaxProduct();
+
+            //LongestSubstringWithKUniqueChar l = new LongestSubstringWithKUniqueChar();
+            //Console.WriteLine(l.LongestSubstringWithKChar("aabacbebebe", 3));
+
+            LongestSubstringWithoutRepeatingChar l = new LongestSubstringWithoutRepeatingChar();
+            Console.WriteLine(l.LongestSubstring("GEEKSFORGEEKS"));
+
             Console.ReadLine();
         }
     }

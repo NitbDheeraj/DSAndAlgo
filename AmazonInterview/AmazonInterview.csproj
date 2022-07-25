@@ -44,23 +44,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AreaUnderHistogram.cs" />
-    <Compile Include="CountIslands.cs" />
-    <Compile Include="CourseScheduling.cs" />
-    <Compile Include="LongestSubstringWithKUniqueChar.cs" />
-    <Compile Include="LongestSubstringWithoutRepeatingChar.cs" />
+    <Compile Include="DynamicProgramming\SlidingWindow\MaximumSequenceOfOnesByReplacing0.cs" />
+    <Compile Include="Trees\BinaryTreeToSumTree.cs" />
+    <Compile Include="Trees\BottomView.cs" />
+    <Compile Include="Trees\BoundaryTraversal.cs" />
+    <Compile Include="Graphs\CountIslands.cs" />
+    <Compile Include="Graphs\CourseScheduling.cs" />
+    <Compile Include="DynamicProgramming\SlidingWindow\LongestSubstringWithKUniqueChar.cs" />
+    <Compile Include="DynamicProgramming\SlidingWindow\LongestSubstringWithoutRepeatingChar.cs" />
     <Compile Include="LRUCache.cs" />
-    <Compile Include="MaximulSumSubarray.cs" />
-    <Compile Include="MaxProductSubarray.cs" />
+    <Compile Include="DynamicProgramming\SlidingWindow\MaximulSumSubarray.cs" />
+    <Compile Include="DynamicProgramming\SlidingWindow\MaxProductSubarray.cs" />
     <Compile Include="MeetingRoomScheduling.cs" />
     <Compile Include="MergeNSortedArray.cs" />
-    <Compile Include="MinimumNumberOfCoins.cs" />
+    <Compile Include="DynamicProgramming\MinimumNumberOfCoins.cs" />
     <Compile Include="PreviousGreaterElement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RottenOranges.cs" />
-    <Compile Include="SmallestSumContineousSubarray.cs" />
-    <Compile Include="WaysToReachNthStair.cs" />
-    <Compile Include="WaysToReachNthStairGeneric.cs" />
+    <Compile Include="Graphs\RottenOranges.cs" />
+    <Compile Include="DynamicProgramming\SmallestSumContineousSubarray.cs" />
+    <Compile Include="Trees\CanBuildBSTFromPreorderarr.cs" />
+    <Compile Include="Trees\LeastCommonAncestor.cs" />
+    <Compile Include="DynamicProgramming\WaysToReachNthStair.cs" />
+    <Compile Include="DynamicProgramming\WaysToReachNthStairGeneric.cs" />
+    <Compile Include="Trees\LeftView.cs" />
+    <Compile Include="Trees\PrintAncestors.cs" />
+    <Compile Include="Trees\RightView.cs" />
+    <Compile Include="Trees\SumOfLeftLeaves.cs" />
+    <Compile Include="Trees\TopView.cs" />
+    <Compile Include="Trees\VertexCoverBinaryTrees.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

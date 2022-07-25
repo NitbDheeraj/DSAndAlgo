@@ -25,23 +25,28 @@ namespace AmazonInterview
 
         private int[] GetPreviousSmallerElement(int[] arr)
         {
+            if (arr == null && arr.Length == 0)
+                return null;
+
             int[] ps = new int[arr.Length];
 
             Stack<int> s = new Stack<int>();
 
             for (int i = 0; i < arr.Length; i++)
             {
-                while (s.Count() > 0 && arr[s.Peek()] >= arr[i])
-                    s.Pop();
+                while(s.Count() > 0)
+                {
+                    if (arr[s.Peek()] >= arr[i])
+                        ps[i] = s.Peek();
+                    else
+                        s.Pop();
+                }
 
-                if (s.Count() > 0)
+                if (s.Count() == 0)
                     ps[i] = -1;
-                else
-                    ps[i] = s.Peek();
 
                 s.Push(i);
             }
-
             return ps;
         }
 
@@ -51,7 +56,7 @@ namespace AmazonInterview
 
             Stack<int> s = new Stack<int>();
 
-            for (int i = arr.Length -1; i >= 0 ; i++)
+            for (int i = arr.Length -1; i >= 0 ; i--)
             {
                 if (s.Count() == 0 )
                 {

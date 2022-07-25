@@ -15,24 +15,22 @@ namespace AmazonInterview
 
             Dictionary<char, int> d = new Dictionary<char, int>();
 
-            int left = 0, right = 0, result = 0;
+            int left = 0,  result = 0;
 
-            while(right < s.Length)
+            for (int right = 0; right < s.Length; right++)
             {
                 char c = s[right];
 
-                if (d.ContainsKey(c))
+                while (d.ContainsKey(c))
                 {
                     d.Remove(s[left]);
                     left++;
                 }
-                else
-                    d.Add(c, 1);
+
+                d.Add(c, 1);
 
                 result = Math.Max(right - left + 1, result);
-                right++;
             }
-
             return result;
         }
 
