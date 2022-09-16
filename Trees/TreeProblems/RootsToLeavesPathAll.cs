@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Trees.TreeProblems
 {
     //Given a binary tree, print all root-to-leaf paths
-    public class AllRootsToLeavesPath
+    public class RootsToLeavesPathAll
     {
         public void PrintAllRootToLeavesPath(BinaryTreeNode<int> binaryTree)
         {
@@ -44,4 +44,42 @@ namespace Trees.TreeProblems
             
         }
     }
+
+    public class PrintRootToLeafPath
+    {
+
+        // The main function to print paths from the root node to every leaf node
+        public void printRootToLeaf(Node node)
+        {
+            // list to store root-to-leaf path
+            List<int> path = new List<int>();
+            printRootToLeafPathsMain(node, path);
+        }
+
+        public void printRootToLeafPathsMain(Node node, List<int> path)
+        {
+            if (node == null)
+                return;
+
+            // include the current node to the path
+            path.Add(node.data);
+
+            // if a leaf node is found, print the path
+            if (node.left == null && node.right == null)
+            {
+                Console.WriteLine(path);
+            }
+
+            // recur for the left and right subtree
+            printRootToLeafPathsMain(node.left, path);
+            printRootToLeafPathsMain(node.right, path);
+
+            // backtrack: remove the current node after the left, and right subtree are done
+            // Remove last node
+            if(path.Count() > 0)
+                path.RemoveAt(path.Count() - 1);
+
+        }
+    }
+
 }

@@ -64,7 +64,7 @@ namespace Trees
             Console.Write("Number of full nodes in given binary tree is " + fullNode.FindNumberOfFullNode(binaryTree));
             Console.WriteLine("\n");
 
-            AllRootsToLeavesPath allPath = new AllRootsToLeavesPath();
+            RootsToLeavesPathAll allPath = new RootsToLeavesPathAll();
             allPath.PrintAllRootToLeavesPath(binaryTree);
 
 

@@ -44,4 +44,33 @@ namespace Trees.TreeProblems
         public int ans = int.MinValue;
     }
 
+
+
+
+    public class DiameterBinaryTree
+    {
+        public int diameterOfBinaryTree(Node node)
+        {
+            if (node == null)
+                return 0;
+
+            int leftSubtreeDiameter = diameterOfBinaryTree(node.left);
+            int rightSubtreeDiameter = diameterOfBinaryTree(node.right);
+            int diameter = getDepth(node.left) + getDepth(node.right);
+            diameter = Math.Max(diameter, Math.Max(leftSubtreeDiameter, rightSubtreeDiameter));
+            return diameter;
+        }
+
+        public int getDepth(Node root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+            int leftSubtreeDepth = getDepth(root.left);
+            int rightSubtreeDepth = getDepth(root.right);
+            return Math.Max(leftSubtreeDepth, rightSubtreeDepth) + 1;
+        }
+    }
+
 }

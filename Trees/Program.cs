@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Trees.Traversal;
+using Trees.TreeProblems;
 
 namespace Trees
 {
@@ -11,6 +12,12 @@ namespace Trees
     {
         static void Main(string[] args)
         {
+
+            CousinsTest ct = new CousinsTest();
+
+            ct.FindCousinsTest();
+
+            Console.ReadLine();
 
             //Create a binary tree
             //              1

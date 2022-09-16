@@ -73,7 +73,7 @@
     <Compile Include="Traversal\ZigZagTraversal.cs" />
     <Compile Include="TreeProblems.cs" />
     <Compile Include="TreeProblems\AddOrDeleteNode.cs" />
-    <Compile Include="TreeProblems\AllRootsToLeavesPath.cs" />
+    <Compile Include="TreeProblems\RootsToLeavesPathAll.cs" />
     <Compile Include="TreeProblems\CheckIf2BinaryTreesAreSimilar.cs" />
     <Compile Include="TreeProblems\CheckPathWithAGivenSum.cs" />
     <Compile Include="TreeProblems\DiameterOfBinaryTree.cs" />
@@ -83,14 +83,18 @@
     <Compile Include="TreeProblems\FindMaxElement.cs" />
     <Compile Include="TreeProblems\FindMinDepth.cs" />
     <Compile Include="TreeProblems\FindNumberOfLeaves.cs" />
+    <Compile Include="TreeProblems\FindCousins.cs" />
     <Compile Include="TreeProblems\FindSizeOfBinaryTree.cs" />
     <Compile Include="TreeProblems\FindSum.cs" />
     <Compile Include="TreeProblems\MaximumSumLevel.cs" />
     <Compile Include="TreeProblems\PrintAncesters.cs" />
     <Compile Include="TreeProblems\ReverseLevelOrder.cs" />
+    <Compile Include="TreeProblems\RootToLeafExistanceOfPath.cs" />
+    <Compile Include="TreeProblems\RootToLeafMaxSumPath.cs" />
+    <Compile Include="TreeProblems\RootToLeafPathMaxSum.cs" />
     <Compile Include="TreeProblems\SearchAnElement.cs" />
     <Compile Include="TreeProblems\TreeMirror.cs" />
-    <Compile Include="TreeProblems\TreeWidth.cs" />
+    <Compile Include="TreeProblems\WidthOfABinaryTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
