@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="LargestSumContiguousSubarray.cs" />
     <Compile Include="LongestCommonSubstrigWithoutRepeatingChar.cs" />
+    <Compile Include="LongestPalandromicSubstring.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
