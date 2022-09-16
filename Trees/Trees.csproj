@@ -50,6 +50,7 @@
     <Compile Include="AVLTrees\Rotations\RightLeftRotation.cs" />
     <Compile Include="AVLTrees\Rotations\RightRotation.cs" />
     <Compile Include="BinarySearchTrees\BSTNode.cs" />
+    <Compile Include="BinarySearchTrees\BSTTripletAddingToZero.cs" />
     <Compile Include="BinarySearchTrees\CheckIfBST.cs" />
     <Compile Include="BinarySearchTrees\DeleteANode.cs" />
     <Compile Include="BinarySearchTrees\FindAnElementInBST.cs" />
