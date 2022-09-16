@@ -21,7 +21,7 @@ namespace TreesTest
             //         6    7
 
             BinaryTreeNode<int> binaryTree = TestData.CreateBinaryTree3();
-            FindLCA findLCA = new FindLCA();
+            FindLeastCommonAncestor findLCA = new FindLeastCommonAncestor();
 
             Assert.AreEqual(1, findLCA.findLCA(binaryTree, new BinaryTreeNode<int>(6), new BinaryTreeNode<int>(5)));
 

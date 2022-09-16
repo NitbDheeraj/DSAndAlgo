@@ -70,16 +70,24 @@
     <Compile Include="Traversal\PostOrderTraversal.cs" />
     <Compile Include="Traversal\PreOrderTraversal.cs" />
     <Compile Include="Traversal\TreeFromTraversal.cs" />
+    <Compile Include="Traversal\TreeFromTraversalGeneric.cs" />
     <Compile Include="Traversal\ZigZagTraversal.cs" />
     <Compile Include="TreeProblems.cs" />
     <Compile Include="TreeProblems\AddOrDeleteNode.cs" />
+    <Compile Include="TreeProblems\BinaryTreeToSumTree.cs" />
+    <Compile Include="TreeProblems\BottomView.cs" />
+    <Compile Include="TreeProblems\BoundaryTraversal.cs" />
+    <Compile Include="TreeProblems\CanBuildBSTFromPreorderarr.cs" />
+    <Compile Include="TreeProblems\LeastCommonAncestor.cs" />
+    <Compile Include="TreeProblems\LeftView.cs" />
+    <Compile Include="TreeProblems\RightView.cs" />
     <Compile Include="TreeProblems\RootsToLeavesPathAll.cs" />
     <Compile Include="TreeProblems\CheckIf2BinaryTreesAreSimilar.cs" />
     <Compile Include="TreeProblems\CheckPathWithAGivenSum.cs" />
     <Compile Include="TreeProblems\DiameterOfBinaryTree.cs" />
     <Compile Include="TreeProblems\FindDeepestNodeInBT.cs" />
     <Compile Include="TreeProblems\FindHeight.cs" />
-    <Compile Include="TreeProblems\FindLCA.cs" />
+    <Compile Include="TreeProblems\FindLeastCommonAncestor.cs" />
     <Compile Include="TreeProblems\FindMaxElement.cs" />
     <Compile Include="TreeProblems\FindMinDepth.cs" />
     <Compile Include="TreeProblems\FindNumberOfLeaves.cs" />
@@ -93,7 +101,11 @@
     <Compile Include="TreeProblems\RootToLeafMaxSumPath.cs" />
     <Compile Include="TreeProblems\RootToLeafPathMaxSum.cs" />
     <Compile Include="TreeProblems\SearchAnElement.cs" />
+    <Compile Include="TreeProblems\SumOfLeftLeaves.cs" />
+    <Compile Include="TreeProblems\TopView.cs" />
     <Compile Include="TreeProblems\TreeMirror.cs" />
+    <Compile Include="TreeProblems\VertexCoverBinaryTrees.cs" />
+    <Compile Include="TreeProblems\VerticalSum.cs" />
     <Compile Include="TreeProblems\WidthOfABinaryTree.cs" />
   </ItemGroup>
   <ItemGroup>

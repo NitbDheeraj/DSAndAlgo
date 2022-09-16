@@ -19,7 +19,6 @@ namespace Trees.TreeProblems
 
             bool levelFound = false;
 
-
             //Normal level order traversal
             while(q.Count() > 0 && !levelFound)
             {

@@ -23,7 +23,7 @@ namespace Trees.TreeProblems
     LCA(4,6) = 1
     */
 
-    public class FindLCA
+    public class FindLeastCommonAncestor
     {
         private ArrayList path1 = new ArrayList();
         private ArrayList path2 = new ArrayList();
