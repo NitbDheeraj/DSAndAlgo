@@ -29,7 +29,7 @@ namespace AmazonInterview
             while(heap.Count() > 0)
             {
                 Tuple<int, Tuple<int, int>> curr = heap[0];
-
+                    
                 heap.RemoveAt(0);
 
                 //array number
