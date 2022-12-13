@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6334C7CB-7169-4FCD-8840-D3A980AD1CD4}</ProjectGuid>
+    <ProjectGuid>{20F97B0D-57AD-446C-8173-2FB51B79DD75}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>StringAlgorithms</RootNamespace>
-    <AssemblyName>StringAlgorithms</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>PriorityExpiryCache</RootNamespace>
+    <AssemblyName>PriorityExpiryCache</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -43,20 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GroupAnagrams.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringMatchingAlgorithms\BruteForce.cs" />
-    <Compile Include="Tries\Trie.cs" />
-    <Compile Include="Tries\TrieNode.cs" />
-    <Compile Include="Tries\TriesTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="StringMatchingAlgorithms\Problem.txt" />
-    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
