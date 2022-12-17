@@ -39,28 +39,28 @@ namespace PriorityExpiryCache
     {
         private int _capacity;
 
-        private Dictionary<string, LinkedListNode<CacheItem>> _keyToItemMap;
+        private Dictionary<string, LinkedListNode<CacheItem>> _map;
         //Can use doubly linked list here
-        private Dictionary<int, LinkedList<CacheItem>> _priorityToListMap;
+        private Dictionary<int, LinkedList<CacheItem>> _priorityMap;
         private PriorityQueue<LinkedListNode<CacheItem>> _minExpiryHeap;
         private PriorityQueue<LinkedListNode<CacheItem>> _minPriorityHeap;
 
         public PriorityExpiryCache(int capacity)
         {
-            _keyToItemMap = new Dictionary<string, LinkedListNode<CacheItem>>();
+            _map = new Dictionary<string, LinkedListNode<CacheItem>>();
             _minExpiryHeap = new PriorityQueue<LinkedListNode<CacheItem>>();
             _minPriorityHeap = new PriorityQueue<LinkedListNode<CacheItem>>();
-            _priorityToListMap = new Dictionary<int, LinkedList<CacheItem>>();
+            _priorityMap = new Dictionary<int, LinkedList<CacheItem>>();
             _capacity = capacity;
         }
 
         public string get(string key)
         {
-            LinkedListNode<CacheItem> node = _keyToItemMap[key];
+            LinkedListNode<CacheItem> node = _map[key];
             if (node == null) return null;
 
             //Can use Doubly Linked list
-            LinkedList<CacheItem> linkedList = _priorityToListMap[node.Value.getPriority()];
+            LinkedList<CacheItem> linkedList = _priorityMap[node.Value.getPriority()];
             linkedList.Remove(node);
             linkedList.AddFirst(node);
 
@@ -69,31 +69,31 @@ namespace PriorityExpiryCache
 
         public void put(string key, string value, int priority, int expiryTime, int currentTime)
         {
-            if (_keyToItemMap.Count() == _capacity) 
+            if (_map.Count() == _capacity) 
                     evict(currentTime);
 
             CacheItem item = new CacheItem(key, value, priority, expiryTime);
 
             LinkedListNode<CacheItem> node = new LinkedListNode<CacheItem>(item);
 
-            if (_keyToItemMap.ContainsKey(key))
+            if (_map.ContainsKey(key))
             {
-                LinkedListNode<CacheItem> oldNode = _keyToItemMap[key];
+                LinkedListNode<CacheItem> oldNode = _map[key];
                 remove(oldNode);
             }
 
-            _keyToItemMap.Add(key, node);
+            _map.Add(key, node);
             _minExpiryHeap.Enqueue(node);
             _minPriorityHeap.Enqueue(node);
-            if(!_priorityToListMap.ContainsKey(priority))
-                _priorityToListMap.Add(priority, new LinkedList<CacheItem>());
+            if(!_priorityMap.ContainsKey(priority))
+                _priorityMap.Add(priority, new LinkedList<CacheItem>());
 
-            _priorityToListMap[priority].AddFirst(node);
+            _priorityMap[priority].AddFirst(node);
         }
 
             public void evict(int currentTime)
         {
-            if (_keyToItemMap.Count() == 0) return;
+            if (_map.Count() == 0) return;
 
             LinkedListNode<CacheItem> node = _minExpiryHeap.Peek();
             if (currentTime > node.Value.getExpiryTime())
@@ -102,17 +102,17 @@ namespace PriorityExpiryCache
                 return;
             }
             node = _minPriorityHeap.Peek();
-            node = _priorityToListMap[node.Value.getPriority()].Last;
+            node = _priorityMap[node.Value.getPriority()].Last;
             remove(node);
         }
 
         //Remove items from all of the databases
         private void remove(LinkedListNode<CacheItem> node)
         {
-            _keyToItemMap.Remove(node.Value.getKey());
+            _map.Remove(node.Value.getKey());
             _minExpiryHeap.Dequeue(node);
             _minPriorityHeap.Dequeue(node);
-            _priorityToListMap[node.Value.getPriority()].Remove(node);
+            _priorityMap[node.Value.getPriority()].Remove(node);
         }
 
     }

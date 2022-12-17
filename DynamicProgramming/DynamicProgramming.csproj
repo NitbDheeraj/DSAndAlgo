@@ -58,6 +58,9 @@
     <Compile Include="1Fibonacci.cs" />
     <Compile Include="3GridTraveller.cs" />
     <Compile Include="CanHowBestSum\HowSum.cs" />
+    <Compile Include="ClimbStairs.cs" />
+    <Compile Include="KnightMinSteps.cs" />
+    <Compile Include="KnightsDialer.cs" />
     <Compile Include="LongestCommonSubsequence.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
