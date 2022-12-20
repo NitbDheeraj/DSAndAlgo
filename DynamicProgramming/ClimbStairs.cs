@@ -62,8 +62,8 @@ namespace DynamicProgramming
 
         public static int CountWays(int height)
         {
-            if (memo.ContainsKey(height))
-                return memo[height];
+            if (memo.ContainsKey(height))  // memoization
+                return memo[height];       // memoization
 
             if (height == 0)
                 return 1;
@@ -79,7 +79,7 @@ namespace DynamicProgramming
             if (height - 3 >= 0)
                 ways += CountWays(height - 3);
 
-            memo.Add(height, ways);
+            memo.Add(height, ways);    // memoization
 
             return ways;
 

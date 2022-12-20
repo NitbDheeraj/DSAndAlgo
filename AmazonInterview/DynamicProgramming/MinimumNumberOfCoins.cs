@@ -12,6 +12,64 @@ namespace AmazonInterview
     public class MinimumNumberOfCoins
     {
 
+        public int minCoinRecursive(int[] S, int target)
+        {
+            // if the total is 0, no coins are needed
+            if (target == 0)
+            {
+                return 0;
+            }
+
+            int minCount = int.MaxValue;
+
+            for (int i = 0; i < S.Length; i++)
+            {
+                if(S[i] < target)
+                {
+                    int currCount = minCoinRecursive(S, target - S[i]);
+                    if (currCount != int.MaxValue && currCount <= minCount)
+                        minCount++;
+                }
+            }
+            return (minCount == int.MaxValue) ? -1 : minCount;
+        }
+
+        public int minCoinDP(int[] S, int target)
+        {
+            if (target == 0)
+            {
+                return 0;
+            }
+            // `T[i]` stores the minimum number of coins needed to get a total of `i`
+            int[] T = new int[target + 1];
+            T[0] = 0;
+
+            for (int i = 0; i < target; i++)
+            {
+                T[i] = int.MaxValue;
+            }
+
+            for (int i = 1; i < target; i++)
+            {
+                for (int j = 0; j < S.Length; j++)
+                {
+                    if(S[j] <=i)
+                    {
+                        int currCount = S[i - S[j]];
+                        if (currCount != int.MaxValue && currCount + 1 < T[i])
+                            T[i] = currCount++;
+                    }
+                }
+            }
+
+            if (T[target] == int.MaxValue)
+                return -1;
+            else
+                return T[target];
+
+        }
+
+
         public int findMinCoins(int[] S, int target)
         {
             // if the total is 0, no coins are needed
@@ -52,5 +110,8 @@ namespace AmazonInterview
             // get a total of `target`
             return T[target];
         }
+
+
+
     }
 }
