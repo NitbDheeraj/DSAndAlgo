@@ -1,0 +1,1 @@
+# Given an array X[] of size n, write a program to find all the leaders in array X[]. 
